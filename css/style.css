@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    box-shadow: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #6082bb;
+    color: #FFFFFF;
+    display: table;
+    font-family: 'HandelGothicBT';
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+	font-size: 3rem; /* 45px */
+    line-height: 5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.link {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+a.link:hover {
+    border-bottom: none;
+}
+
+a.social {
+    padding-right: 15px;
+}
+
+a.social:last-of-type {
+    padding-right: 0;
+}
+
+.heart {
+    font-size: 0.9em;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.heart i {
+    color: red;
+}
+
+section {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section div.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+@media screen and (max-width: 1366px) {
+    section div.container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section div.container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section div.container {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    section div.container {
+        padding-bottom: 50px;
+    }
+}
