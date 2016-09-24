@@ -5,7 +5,7 @@ O grupo PHPVale busca promover PHP e tecnologia na região do Vale do Paraíba.
 - [ ] Desenvolver um portal com artigos, fórum e vagas de emprego
 - [ ] Criar logo e capa para as redes social
 - [x] Criar página no Facebook e twitter
-- [ ] Criar chat no Telegram
+- [x] Criar chat no Telegram
 - [ ] Criar eventos e meetups
 - [ ] Criar cursos e palestras
 	- Empresas
