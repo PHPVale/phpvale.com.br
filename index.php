@@ -28,11 +28,12 @@
       <p>Quer colaborar? Nos encontre nas redes sociais:</p>
       <br>
       <p>
-        <a href="https://www.facebook.com/developers.do.vale" class="social" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-        <a href="https://twitter.com/phpvale" class="social" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="#" class="social" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/PHPVale" class="social" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-        <a href="mailto:contato@phpvale.com.br" class="social"><i class="fa fa-envelope-o fa-2x"></i></a>
+        <a href="https://www.facebook.com/developers.do.vale" class="social" target="_blank" title="Facebook PHPVale"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/phpvale" class="social" target="_blank" title="Twitter PHPVale"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#" class="social" target="_blank" title="Linkedin PHPVale"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/PHPVale" class="social" target="_blank" title="GitHub PHPVale"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://telegram.me/joinchat/CfuMTQoJjUjPQ_39AnE9uQ" class="social" target="_blank" title="Telegram PHPVale"><i class="fa fa-paper-plane fa-2x"></i></a>
+        <a href="mailto:contato@phpvale.com.br" class="social" title="Contato PHPVale"><i class="fa fa-envelope-o fa-2x"></i></a>
       </p>
     </div>
 
