@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen, print">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/fontes.css" media="screen, print">
+  <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" media="screen, print">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen, print">
 
   <title>PHPVale - Grupo de desenvolvedores PHP do Vale do Paraíba</title>
