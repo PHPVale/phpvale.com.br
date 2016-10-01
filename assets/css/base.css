@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    moz-appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, p, a {
+    color: #6082bb;
+    font-family: 'HandelGothicBT' !important; 
+    text-decoration: none;
+}
+
+h1 {
+	font-size: 3rem; /* ~ 45px */
+    line-height: 5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+p {
+    font-size: 1.2rem; /* ~ 18px */
+    line-height: 2rem;
+}
+
+a {
+    border-bottom: 1px solid;
+    font-size: 1.2rem; /* ~ 18px */
+}
+
+a:hover {
+    color: #6082bb;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+a.link {
+    border-bottom: 1px solid;
+}
+
+a.transparent {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+a.social {
+    border-bottom: none;
+    margin-right: 10px;
+}
+
+a.social:hover {
+    opacity: 0.7;
+}
+
+a.fechar {
+    border: none;
+    display: none;
+    font-family: sans-serif !important;
+    font-size: 1.5em;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+a.fechar:before {
+    content: "X";
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.clear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+.branco {
+    color: #FFFFFF;
+}
+
+.azul {
+    color: #6082bb;
+}
+
+.preto {
+    color: rgba(0,0,0,.87);
+}
+
+.bg-cinza-claro {
+    background-color: #e2e3e4;
+}
+
+.toUpper {
+    text-transform: uppercase;
+}
+
+/* OWN RESET */
+
+.own-grid {
+    margin: 25px 0;
+}
+
+.own-grid .four.computer.two.tablet.one.smart {
+    /*border: 1px solid red;*/
+    float: left;
+    width: 25%;
+}
+
+.own-grid .one.computer {
+    width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    .own-grid .four.computer.two.tablet.one.smart {
+        margin: 10px 0;
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .own-grid .four.computer.two.tablet.one.smart {
+        float: none;
+        width: 100% !important;
+    }
+
+    h1 {
+
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    p, a {
+        font-size: 1.1rem;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    a.fechar {
+        display: block;
+    }
+}
+
+form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+input {
+    border: 1px solid #6082bb;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #6082bb;
+    color: #FFFFFF;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #6082bb;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .8) !important;
+}
