@@ -73,12 +73,18 @@ a.social:hover {
 
 a.fechar {
     border: none;
-    display: none;
+    /*display: none;*/
     font-family: sans-serif !important;
     font-size: 1.5em;
     position: absolute;
     right: 10px;
     top: 5px;
+}
+
+.todo a.fechar {
+    font-size: 3em;
+    right: 30px;
+    top: 30px;
 }
 
 a.fechar:before {
@@ -91,6 +97,10 @@ a.fechar:before {
 
 .hide {
     display: none !important;
+}
+
+.relative {
+    position: relative;
 }
 
 .opacity-1 {
@@ -133,6 +143,19 @@ a.fechar:before {
     text-transform: uppercase;
 }
 
+.has-shadow {
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .14);
+}
+
+.border-none {
+    border: none;
+}
+
+.erro {
+    color: red;
+    font-size: 0.8rem;
+}
+
 /* OWN RESET */
 
 .own-grid {
@@ -140,7 +163,6 @@ a.fechar:before {
 }
 
 .own-grid .four.computer.two.tablet.one.smart {
-    /*border: 1px solid red;*/
     float: left;
     width: 25%;
 }
@@ -153,6 +175,13 @@ a.fechar:before {
     .own-grid .four.computer.two.tablet.one.smart {
         margin: 10px 0;
         width: 50% !important;
+    }
+
+    .todo a.fechar {
+        font-size: 2rem;
+        right: 10px;
+        top: 10px;
+        z-index: 9999;
     }
 }
 
@@ -185,7 +214,7 @@ a.fechar:before {
     }
 
     a.fechar {
-        display: block;
+        display: block !important;
     }
 }
 
@@ -194,13 +223,48 @@ form {
     width: 90%;
 }
 
-input {
+fieldset {
+    border: none;
+}
+
+input, textarea {
     border: 1px solid #6082bb;
     border-radius: 5px;
+    font-family: 'Arial' !important; 
     font-size: 1.1rem;
     margin: 10px 0 5px;
     padding: 15px 10px;
+    resize: none;
     width: 100%;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+
+input[type="file"] + label {
+    border-radius: 5px;
+    border: 1px solid #6082bb;
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Arial' !important;
+    font-size: 1.1rem;
+    margin: 10px 0 0;
+    overflow: hidden;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+input[type="file"] + label.has-file {
+    color: #000000 !important;
+}
+
+textarea {
+    min-height: 150px;
 }
 
 .btn {
@@ -216,13 +280,13 @@ input {
 }
 
 ::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, .8) !important;
+    color: rgba(0, 0, 0, .4) !important;
 }
 
 ::-moz-placeholder {
-    color: rgba(0, 0, 0, .8) !important;
+    color: rgba(0, 0, 0, .4) !important;
 }
 
 :-ms-input-placeholder {
-    color: rgba(0, 0, 0, .8) !important;
+    color: rgba(0, 0, 0, .4) !important;
 }

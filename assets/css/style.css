@@ -3,6 +3,10 @@
     max-width: 1400px;
 }
 
+.container.menor {
+    max-width: 800px;
+}
+
 .all-site {
     padding-top: 130px;
 }
@@ -30,7 +34,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 footer {
@@ -44,7 +48,7 @@ footer {
 .top {
 	background-color: #6082bb;
 	height: 80px;
-    padding-top: 24px;
+    padding-top: 30px;
 	width: 100%;
 }
 
@@ -55,6 +59,14 @@ footer {
 .top p.members {
     float: right;
     font-size: 0.9em;
+}
+
+.logo {
+    border-bottom: none;    
+}
+
+.logo img {
+    max-width: 120px;
 }
 
 .menu {
@@ -162,7 +174,6 @@ section {
 
 .blog-article {
     border: 1px solid #CCCCCC;
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .14);
     margin: 0 auto;
     height: 300px;
     width: 80%;
@@ -174,19 +185,19 @@ section {
 
 .blog-article .has-image img {
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .blog-article .has-content {
-    height: 100px;
+    height: auto;
     text-align: left;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .blog-article .has-content p {
     font-size: 1rem;
     line-height: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .partners {
@@ -198,7 +209,8 @@ section {
 }
 
 .partners img {
-    width: 150px;
+    margin-right: 15px;
+    max-width: 150px;
 }
 
 .back-top {
@@ -215,6 +227,7 @@ section {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
     width: 50px;
+    z-index: 3;
 }
 
 .modal {
@@ -236,7 +249,6 @@ section {
     height: auto;
     left: 50%;
     margin-left: -300px;
-    /*margin-top: -200px;*/
     overflow: auto;
     padding: 20px 0 30px; 
     position: fixed;
@@ -250,43 +262,134 @@ section {
     transition: all .3s;
 }
 
-.box-events {
+.modal-content-full {
+    display: table;
+    height: 100% !important;
+    left: 0 !important;
+    margin-left: 0 !important;
+    padding: 0;
+    width: 100% !important;
+}
+
+.modal-content-full.active {
+    top: 0 !important;
+}
+
+.modal-content-full .todo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#slideEvents .owl-stage-outer {
+    height: 210px;
+}
+
+#slideEvents .owl-item .item {
     border: 1px solid #CCCCCC;
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .14);
-    /*height: 120px;*/
-    margin: 0 auto 20px;
-    position: relative;
-    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    width: 80% !important;
 }
 
-.box-events .row {
-    height: 110px;
+#slideEvents .owl-item .item span {
+    display: table-cell;
+    height: 200px;
+    vertical-align: middle;
+    width: 300px;
 }
 
-.box-events .image {
-    float: left;
+#slideEvents .owl-item .item img {
+    margin: 0 auto;
+    max-height: 200px;
+    max-width: 80%;
+}
+
+.prev, .next {
+    background-color: #6082bb;
+    border-radius: 100%;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    padding: 12px 14px;
+    position: absolute;
+    top: 80px;
+    width: 40px;
+    z-index: 9;
+}
+
+.next {
+    right: 0;
+}
+
+.tags {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.tags a {
+    background-color: #6082bb;
+    border-radius: 10px;
+    border: 1px solid;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 10px;
+}
+
+.tags a.selected {
+    background-color: #FFF;
+    color: #6082bb;
+    transition: .4s all;
+}
+
+.loading {
+    background: url(../img/loading.gif) no-repeat center #FFFFFF;
     height: 100%;
-    width: 25%;
-}
-
-.box-events .image img {
-    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 999;
 }
 
-.box-events .main-infos {
-    float: left;
-    height: 100%;
-    padding: 10px 20px;
+.box-participation {
+    border: 1px solid #CCCCCC;
+    margin: 10px auto;
+    height: 200px;
+    width: 80%;
 }
 
-.box-events .main-infos p:last-of-type, .box-events .main-infos a {
-    font-size: 1rem;
+.box-participation span {
+    display: table-cell;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
 }
 
-.box-events .description {
-    display: none;
-    width: 100%;
+.box-participation img {
+    max-height: 200px;
+    max-width: 80%;
+}
+
+#slideParticipations {
+    margin: 20px auto 10px;
+    max-width: 50%;
+}
+
+#slideParticipations .owl-item .item {
+    height: 300px;
+}
+
+.modal-content-full .next {
+    right: 23%;
+    top: 130px;
+}
+
+.modal-content-full .prev {
+    left: 23%;
+    top: 130px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -296,7 +399,8 @@ section {
 }
 
 @media screen and (max-width: 1200px) {
-    .container {
+    .container,
+    .container.menor {
         max-width: 700px;
     }
 
@@ -310,10 +414,6 @@ section {
         display: none;
         position: fixed;
         width: 100%;
-    }
-
-    .menu.open {
-        /*position: fixed;*/
     }
 
     .menu ul {
@@ -349,10 +449,39 @@ section {
     .members {
         display: none;
     }
+
+    .modal-content-full .container {
+        height: 95%;
+        overflow: auto;
+    }
+
+    #slideParticipations .owl-item .item {
+        height: 200px;
+    }
+
+    .modal-content-full h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        padding-top: 40px;
+    }
+
+    .modal-content-full .prev,
+    .modal-content-full .next {
+        top: 80px;
+    }
+
+    .modal-content-full .next {
+        right: 22%;
+    }
+
+    .modal-content-full .prev {
+        left: 22%;
+    }
 }
 
 @media screen and (max-width: 699px) {
-    .container {
+    .container,
+    .container.menor {
         max-width: 300px;
     }
 
@@ -372,5 +501,32 @@ section {
 
     .fa-2x {
         font-size: 1.5em;
+    }
+
+    .partners img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100px;
+    }
+
+    .modal-content-full h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content-full p {
+        display: none;
+    }
+
+    .modal-content-full .prev,
+    .modal-content-full .next {
+        display: none;
+    }
+
+    #slideParticipations {
+        max-width: 100%;
+    }
+
+    #slideParticipations .owl-item .item {
+        height: 200px;
     }
 }
