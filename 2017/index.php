@@ -26,7 +26,7 @@
 			
 			<h2>1ª edição</h2>
 			<p>29/02/2017 09:00</p>
-			<p>Auditório xxx</p>
+			<p>Auditório da Escola xxx</p>
 
 			<div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14626.850459576925!2d-46.67468481180029!3d-23.57876285478677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e649b93341decc5!2sCampus+S%C3%A3o+Paulo+-+Google+Space!5e0!3m2!1spt-BR!2sbr!4v1486135876328" width="600" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
