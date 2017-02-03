@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    box-shadow: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #6082bb;
+    color: #FFFFFF;
+    /*display: table;*/
+    font-family: 'HandelGothicBT';
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+	font-size: 3rem; /* 45px */
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 2rem; /* 30px */
+    line-height: 5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.link {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+a.link:hover {
+    border-bottom: none;
+}
+
+a.social {
+    padding-right: 15px;
+}
+
+a.social:last-of-type {
+    padding-right: 0;
+}
+
+a.social:hover {
+    opacity: .7;
+}
+
+.heart {
+    font-size: 0.9em;
+}
+
+.heart i {
+    color: red;
+}
+
+div.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-top: 40px;
+}
+
+.container-social {
+    padding: 35px 0 20px;
+}
+
+.map {
+    height: 400px;
+    margin: 20px auto 0;
+    max-width: 600px;
+}
+
+.help {
+    margin-right: 30px;
+}
+
+.help:last-of-type {
+    margin-right: 0;
+}
+
+.help img {
+    width: 100px;
+}
+
+section {
+    padding-top: 20px;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+input, textarea {
+    border: 1px solid #6082bb;
+    border-radius: 5px;
+    font-family: 'Arial' !important; 
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    padding: 15px;
+    resize: none;
+    width: 100%;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+
+input[type="file"] + label {
+    border-radius: 5px;
+    border: 1px solid #6082bb;
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Arial' !important;
+    font-size: 1.1rem;
+    margin: 10px 0 0;
+    overflow: hidden;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+input[type="file"] + label.has-file {
+    color: #000000 !important;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.btn {
+    background-color: #6082bb;
+    border: 2px solid #FFF;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+    color: #6082bb;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .4) !important;
+}
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, .4) !important;
+}
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .4) !important;
+}
+
+@media screen and (max-width: 1366px) {
+    section div.container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    div.container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}

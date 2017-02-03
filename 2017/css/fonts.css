@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'HandelGothicBT';
+	src: url('../fonts/HandelGothicBT/HandelGothicBT.ttf'),
+		 url('../fonts/HandelGothicBT/HandelGothicBT.eot'),
+		 url('../fonts/HandelGothicBT/HandelGothicBT.woff');
+	font-weight: normal;
+	font-style: normal;
+}
