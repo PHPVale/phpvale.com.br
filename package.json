@@ -1,0 +1,20 @@
+{
+  "name": "phpvale",
+  "version": "0.0.1",
+  "description": "phpvale landing page",
+  "main": "index.js",
+  "keywords": [
+    "php",
+    "vale do paraiba",
+    "desenvolvimento web",
+    "eventos",
+    "meetup"
+  ],
+  "author": "Denilson Raimundo <denilsonraimundo10@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.0"
+  }
+}
