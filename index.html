@@ -1,139 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba</title>
+  <title>PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba - SP</title>
 
-	<meta charset="utf-8">
-  <meta name="title" content="PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba">
+  <meta charset="utf-8">
+  <meta name="title" content="PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba - SP">
   <meta name="description" content="Somos um grupo que visa promover o PHP e demais tecnologias relacionadas ao desenvolvimento web na região do Vale do Paraíba - SP">
-  <meta name="keywords" content="PHP, Vale do Paraíba, Desenvolvimento web">
+  <meta name="keywords" content="PHP, Desenvolvimento web, Vale do Paraíba">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" href="favicon.png">
 
-	<link rel="stylesheet" href="assets/dist/css/style.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/dist/css/style.min.css">
+  <link rel="stylesheet" href="assets/dist/css/font-awesome.min.css">
+
+  <script type="application/ld+json">
+  	{
+		  "context": "http://schema.org",
+		  "@type": "Organization",
+		  "name": "PHPVale",
+		  "url": "http://www.phpvale.com.br",
+		  "logo": "http://www.phpvale.com.br/assets/dist/img/php-vale-logo.png",
+		  "foundingDate": "2018",
+		  "founders": [
+		    {
+		      "@type": "Person",
+		      "name": "Denilson Raimundo de Paula",
+		      "email": "denilsonraimundo10@gmail.com"
+		    },
+		    {
+		      "@type": "Person",
+		      "name": "Fernando Máximo Ferreira",
+		      "email": "fernandomaximo52@gmail.com"
+		    },
+		    {
+		      "@type": "Person",
+		      "name": "Lucas de Oliveira",
+		      "email": "94oliveira.lucas@gmail.com"
+		    },
+		    {
+		      "@type": "Person",
+		      "name": "Lucas Porto de Deus",
+		      "email": "lukassupl1@gmail.com"
+		    },
+		    {
+		      "@type": "Person",
+		      "name": "Victor Renan Ribeiro Bittencourt",
+		      "email": "victor_rrb@yahoo.com.br"
+		    }
+		  ],
+		  "contactPoint": {
+		    "@type": "ContactPoint",
+		    "email": "contato@phpvale.com.br"
+		  },
+		  "sameAs": [ 
+		    "https://www.facebook.com/developers.do.vale",
+		    "https://twitter.com/phpvale",
+		    "https://www.meetup.com/pt-BR/PHPVale/?_cookie-check=Sf4o2O8qwbBw1FNw",
+		    "https://github.com/PHPVale",
+		    "https://telegram.me/joinchat/CfuMTQoJjUjPQ_39AnE9uQ"
+		  ],
+		  "event": [
+		  	{
+		  	  "@type": "Event",
+		      "name": "Meetup PHPVale #1",
+		      "about": "O meetup busca promover PHP e tecnologia na região do Vale do Paraíba - SP",
+		      "organizer": "PHPVale",
+		      "startDate": "2018-05-05",
+		      "endDate": "2018-05-05",
+		      "location": {
+		        "@type": "Place",
+		        "name": "Fatec Prof. Waldomiro May",
+		        "address": {
+		          "@type": "PostalAddress",
+		          "addressLocality": "Cruzeiro",
+		          "addressRegion": "SP"
+		        },
+		        "url": "http://fateccruzeiro.edu.br/"
+		      }
+		    }
+		  ]
+		}
+  </script>
 </head>
 
 <body>
 
-	<main>
-		<header class="header">
-			<img src="assets/dist/img/php-vale-logo.png" alt="phpvale">
+  <main>
+
+    <header class="header">
+		  <img src="assets/dist/img/php-vale-logo.png" alt="phpvale">
 		</header>
 
 		<section class="home">
-			<h2>
-				<img id="phpValeLogoPosition" src="assets/dist/img/php-vale-logo.png" alt="phpvale">
-			</h2>
+		  <h2>
+		    <img id="phpValeLogo" src="assets/dist/img/php-vale-logo.png" alt="phpvale">
+		  </h2>
 
-			<p><span class="text-side-borders">Bem-vindo ao phpvale</span> <br> grupo de desenvolvedores PHP do Vale do Paraíba</p>
+		  <p><span class="text-side-borders">Bem-vindo ao phpvale</span> <br> grupo de desenvolvedores PHP do Vale do Paraíba</p>
 
-			<div class="social">
+	  	<div class="social">
 				<a href="https://www.facebook.com/developers.do.vale" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
 				<a href="https://twitter.com/phpvale" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 				<a href="https://www.meetup.com/pt-BR/PHPVale/" target="_blank"><i class="fa fa-meetup fa-2x"></i></a>
 				<a href="https://github.com/PHPVale" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 				<a href="https://telegram.me/joinchat/CfuMTQoJjUjPQ_39AnE9uQ" target="_blank"><i class="fa fa-telegram fa-2x"></i></a>
 				<a href="mailto:contato@phpvale.com.br"><i class="fa fa-envelope-o fa-2x"></i></a>
-			</div>
+		  </div>
 
-			<a class="arrow-control" href="#" onclick="scroolToSection();"><i class="arrow down"></i></a>
+	  	<a class="arrow-control" href="#" onclick="scroolToSection();"><i class="arrow down"></i></a>
 		</section>
 
-		<section class="who-we-are" id="whoWeAre">
-			<h2 class="text-side-borders section-title">quem somos</h2>
+    <section class="who-we-are" id="whoWeAre">
+		  <h2 class="text-side-borders section-title">quem somos</h2>
 
-			<p class="section-description">
-				Somos um grupo que visa promover o PHP e demais tecnologias relacionadas ao desenvolvimento web na região do Vale do Paraíba - SP.
-			</p>
+		  <p class="section-description">
+		    Somos um grupo que visa promover o PHP e demais tecnologias relacionadas ao desenvolvimento web na região do Vale do Paraíba - SP.
+		  </p>
 		</section>
 
 		<section class="events" id="events">
-			<h2 class="text-side-borders section-title">eventos</h2>
+		  <h2 class="text-side-borders section-title">eventos</h2>
 
-			<p class="section-description">
-				Veja quando serão nossos próximos encontros e eventos.
-			</p>
+		  <p class="section-description">
+			Veja quando serão nossos próximos encontros e eventos.
+		  </p>
 
-			<ul>
-				<li class="card-event">
-					<h3><i class="fa fa-meetup"></i>Meetup #1</h3>
+		  <ul>
+		    <li class="card-event">
+			  	<h3><i class="fa fa-meetup"></i>Meetup #1</h3>
 
-					<p>
+			  	<p>
 						No Sábado, 05 de Maio, acontece o primeiro meetup de PHP em Cruzeiro, no prédio da Fatec! Vagas limitadas.
-					</p>
+			  	</p>
 
-					<p>
+			  	<p>
 						<a href="https://meetup.com/pt-BR/Meetup-de-PHP-em-Cruzeiro-SP-01-Fatec/" target="_blank" class="btn">Quero participar!</a>
-					</p>
+			  	</p>
 				</li>
-			</ul>
+		  </ul>
 		</section>
 
 		<section class="partners" id="partners">
-			<h2 class="section-title"><span class="text-side-borders">Parceiros e apoiadores</span></h2>
+	  	<h2 class="section-title"><span class="text-side-borders">Parceiros e apoiadores</span></h2>
 
-			<ul class="partners-list">
+	  	<ul class="partners-list">
 				<li>
-					<a href="http://www.fateccruzeiro.edu.br/" target="_blank">
+	      	<a href="http://www.fateccruzeiro.edu.br/" target="_blank">
 						<img src="assets/dist/img/fatec-cruzeiro-logo.png" alt="Fatec Cruzeiro">
-					</a>
+		  		</a>
 				</li>
-			</ul>
+	  	</ul>
 		</section>
 
 		<footer class="footer">
-			<div class="social">
-				<a href="https://www.facebook.com/developers.do.vale" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+	  	<div class="social">
+	    	<a href="https://www.facebook.com/developers.do.vale" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
 				<a href="https://twitter.com/phpvale" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 				<a href="https://www.meetup.com/pt-BR/PHPVale/" target="_blank"><i class="fa fa-meetup fa-2x"></i></a>
 				<a href="https://github.com/PHPVale" target="_blank"><i class="fa fa-github fa-2x"></i></a>
 				<a href="https://telegram.me/joinchat/CfuMTQoJjUjPQ_39AnE9uQ" target="_blank"><i class="fa fa-telegram fa-2x"></i></a>
 				<a href="mailto:contato@phpvale.com.br"><i class="fa fa-envelope-o fa-2x"></i></a>
-			</div>
+	  	</div>
 
-			<p>&copy; <span id="year"></span> | phpvale.com.br</p>
+	  	<p>&copy; <span id="year"></span> | phpvale.com.br</p>
 		</footer>
-	</main>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </main>
 
-	<script>
-		getCurrentYear = () => {
-			let date = new Date();
-			let year = date.getFullYear();
+  <script src="assets/dist/js/jquery-3.3.1.min.js"></script>
 
-			document.getElementById('year').innerHTML = year;		
+  <script>
+    getCurrentYear = () => {
+		  let date = new Date();
+		  let year = date.getFullYear();
+
+		  document.getElementById('year').innerHTML = year;		
 		}
 
 		scroolToSection = () => {
-			let whoWeArePosition = $("#whoWeAre").offset().top;
+		  let whoWeArePosition = $("#whoWeAre").offset().top;
 
-			$('html, body').animate({
+		  $('html, body').animate({
 		    scrollTop: whoWeArePosition
 		  }, 1000);
 		}
 
 		controlHeaderVisibility = () => {
-			let scroll = $(window).scrollTop();
-			let phpValeLogoPosition = $("#phpValeLogoPosition").offset().top; 
+		  let scroll = $(window).scrollTop();
+		  let phpValeLogo = $("#phpValeLogo").offset().top; 
 
-      if (scroll > phpValeLogoPosition) {
-        $('.header').addClass('opacity');
-      } else {
-        $('.header').removeClass('opacity');
-      }
+	      if (scroll > phpValeLogo) {
+	      	$('.header').addClass('opacity');
+	      } else {
+	        $('.header').removeClass('opacity');
+	      }
 		}
 
 		$(window).scroll(() => {
-			controlHeaderVisibility();
+		  controlHeaderVisibility();
 		});
 
 		getCurrentYear();
 		controlHeaderVisibility();
-	</script>
+  </script>
 
 </body>
-
 </html>

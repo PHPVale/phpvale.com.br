@@ -42,12 +42,12 @@ p.section-description {
 	&:before,
 	&:after {
 		border: 1px solid;
-	    content: ' ';
-	    display: inline-block;
-	    position: absolute;
-	    right: -30px;
-	    top: 50%;
-	    width: 20px;
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 20px;
 	}
 
 	&:before {
@@ -140,14 +140,14 @@ p.section-description {
 		.arrow {
 			animation: arrow-down 2s infinite;
 			border: solid #FFF;
-		    border-width: 0 1px 1px 0;
-		    display: inline-block;
-		    left: 50%;
-		    margin-left: -15px;
-		    padding: 10px;
-		    position: absolute;
+	    border-width: 0 1px 1px 0;
+	    display: inline-block;
+	    left: 50%;
+	    margin-left: -15px;
+	    padding: 10px;
+	    position: absolute;
 
-		    @keyframes arrow-down {
+	    @keyframes arrow-down {
 				0% {
 					bottom: 40px;
 				}
@@ -156,10 +156,10 @@ p.section-description {
 				}
 			}
 
-		    &.down {
-		    	transform: rotate(45deg);
-	    		-webkit-transform: rotate(45deg);
-		    }
+	    &.down {
+	    	transform: rotate(45deg);
+    		-webkit-transform: rotate(45deg);
+	    }
 		}
 	}
 }
@@ -185,27 +185,27 @@ p.section-description {
 
 	.card-event {
 		background: rgba(0, 0, 0, .5);
-		box-shadow: 4px 4px 3px #012646;
 		list-style: none;
-	    max-width: 640px;
-	    margin: 40px auto 0;
-	    padding: 4rem;
-	    text-align: left;
+    max-width: 640px;
+    margin: 40px auto 0;
+    padding: 4rem;
+    text-align: left;
+    transition: .3s all;
 
-	    h3 {
-	    	font-size: 1.5rem;
-	    	margin-bottom: 20px;
+    h3 {
+    	font-size: 1.5rem;
+    	margin-bottom: 20px;
 
-	    	i {
-	    		padding-right: 10px;
-	    	}
-	    }
+    	i {
+    		padding-right: 10px;
+    	}
+    }
 
-	    p {
-	    	color: #FFF;
-	    	font-size: 1.1rem;
-	    	line-height: 2.2rem;
-	    }
+    p {
+    	color: #FFF;
+    	font-size: 1.1rem;
+    	line-height: 2.2rem;
+    }
 	}
 }
 
