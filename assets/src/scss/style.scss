@@ -223,11 +223,24 @@ p.section-description {
 	}
 
 	.partners-list {
+		align-items: center;
+		display: flex;
 		margin: 40px auto 0;
 		max-width: 640px;
+		justify-content: center;
 
 		li {
 			display: inline-block;
+			margin: 0 15px;
+
+			a {
+				border-bottom: 1px dashed #FFF;
+    		padding-bottom: 10px;
+
+    		&:hover {
+    			border-bottom: none;
+    		}
+			}
 		}
 	}
 }
@@ -265,5 +278,13 @@ p.section-description {
 
 	.events .card-event {
 		padding: 2rem;
+	}
+
+	.partners-list {
+		flex-direction: column;
+
+		li {
+			margin: 15px 0 !important;
+		}
 	}
 }

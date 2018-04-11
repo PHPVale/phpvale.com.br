@@ -1,17 +1,32 @@
 ## Objetivo
 O grupo PHPVale busca promover PHP e tecnologia na região do Vale do Paraíba.
 
-## @todo
-- [ ] Desenvolver um portal com artigos, fórum e vagas de emprego
-- [ ] Criar logo e capa para as redes sociais
-- [x] Criar página no [Facebook](https://www.facebook.com/developers.do.vale) e [Twitter](https://twitter.com/phpvale)
-- [x] Criar [grupo no Telegram](https://telegram.me/joinchat/CfuMTQoJjUjPQ_39AnE9uQ)
-- [ ] Criar eventos e meetups
-- [ ] Criar cursos e palestras
-	- Empresas
-	- Universidades
-	- Escolas técnicas
-	- Escolas públicas (ensino médio)
- 
-## Quem?
-Qualquer pessoa que tem interesse em ajudar.
+## Configuração
+Faça um fork deste repositório.
+Vá ao terminal e dê um clone em seu fork.
+
+```
+git clone git@github.com:PHPVale/phpvale.com.br.git
+cd phpvale.com.br
+```
+
+Instale os módulos necessários executando:
+
+```
+npm install
+```
+
+## Executar
+Para executar o projeto execute o comando:
+
+``` 
+gulp
+```
+
+Agora, acesse [http://localhost:9001](http://localhost:9001) e divirta-se.
+
+## Contribuição
+Sinta-se a vontade para contribuir. Abra um pull request através de seu fork, descrevendo as mudanças propostas por você.
+
+## Issues
+Você pode nos ajudar também abrindo [uma issue](https://github.com/PHPVale/phpvale.com.br/issues/new).
