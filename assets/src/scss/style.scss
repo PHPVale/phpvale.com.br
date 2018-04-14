@@ -20,7 +20,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-h3 {
+h3, h4 {
 	font-weight: normal;
 }
 
@@ -36,6 +36,10 @@ p.section-description {
 	line-height: 2rem;
 	margin: 40px auto 0;
 	max-width: 640px;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .text-side-borders {
@@ -71,6 +75,14 @@ p.section-description {
 	&:hover {
 		background-color: #FFF;
 		color: #023665;
+	}
+
+	&.see-all {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2rem;
+		margin-top: 40px;
+    padding: 5px 25px;
 	}
 }
 
@@ -184,7 +196,7 @@ p.section-description {
 	}
 
 	.card-event {
-		background: rgba(0, 0, 0, .5);
+		background: rgba(0, 0, 0, .15);
 		list-style: none;
     max-width: 640px;
     margin: 40px auto 0;
@@ -194,7 +206,17 @@ p.section-description {
 
     h3 {
     	font-size: 1.5rem;
+    	margin-bottom: 10px;
+
+    	i {
+    		padding-right: 10px;
+    	}
+    }
+
+    h4 {
+    	font-size: .9rem;
     	margin-bottom: 20px;
+    	padding-left: 5px;
 
     	i {
     		padding-right: 10px;
@@ -206,6 +228,16 @@ p.section-description {
     	font-size: 1.1rem;
     	line-height: 2.2rem;
     }
+	}
+}
+
+.jobs {
+	background-color: #5f81ba;
+	padding: 8rem 2rem;
+	text-align: center;
+
+	h2 {
+		color: #670b96;
 	}
 }
 
@@ -223,15 +255,12 @@ p.section-description {
 	}
 
 	.partners-list {
-		align-items: center;
-		display: flex;
 		margin: 40px auto 0;
-		max-width: 640px;
-		justify-content: center;
+		max-width: 940px;
 
 		li {
 			display: inline-block;
-			margin: 0 15px;
+			margin: 0 15px 45px;
 
 			a {
 				border-bottom: 1px dashed #FFF;
@@ -284,7 +313,8 @@ p.section-description {
 		flex-direction: column;
 
 		li {
-			margin: 15px 0 !important;
+			display: block !important;
+			margin: 45px 0 !important;
 		}
 	}
 }

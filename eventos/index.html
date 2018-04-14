@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba - SP</title>
+  <title>PHPVale | Eventos</title>
 
   <meta charset="utf-8">
-  <meta name="title" content="PHPVale | Grupo de desenvolvedores PHP do Vale do Paraíba - SP">
-  <meta name="description" content="Somos um grupo que visa promover o PHP e demais tecnologias relacionadas ao desenvolvimento web na região do Vale do Paraíba - SP">
-  <meta name="keywords" content="PHP, Desenvolvimento web, Vale do Paraíba">
+  <meta name="title" content="PHPVale | Eventos">
+  <meta name="description" content="Lista de eventos organizados pela comunidade PHPVale.">
+  <meta name="keywords" content="Eventos, Meetup, PHP, Desenvolvimento web, Vale do Paraíba">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" href="favicon.png">
 
-  <link rel="stylesheet" href="assets/dist/css/style.min.css">
-  <link rel="stylesheet" href="assets/dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/dist/css/style.min.css">
+  <link rel="stylesheet" href="../assets/dist/css/font-awesome.min.css">
 
   <script type="application/ld+json">
   	{
@@ -89,14 +89,16 @@
   <main>
 
     <header class="header">
-    	<a href="#" title="PHPVale" onclick="Main.scroolToSection('home');">
-		  	<img src="assets/dist/img/php-vale-logo.png" alt="phpvale">
-		  </a>
+    	<a href="/" title="PHPVale">
+		  	<img src="../assets/dist/img/php-vale-logo.png" alt="phpvale">
+			</a>
 		</header>
 
-		<section class="home" id="home">
+		<section class="home">
 		  <h2>
-		    <img id="phpValeLogo" src="assets/dist/img/php-vale-logo.png" alt="phpvale">
+		  	<a href="/" title="PHPVale">
+		    	<img id="phpValeLogo" src="../assets/dist/img/php-vale-logo.png" alt="phpvale">
+		    </a>
 		  </h2>
 
 		  <p><span class="text-side-borders">Bem-vindo ao phpvale</span> <br> grupo de desenvolvedores PHP do Vale do Paraíba</p>
@@ -110,35 +112,17 @@
 				<a href="mailto:contato@phpvale.com.br"><i class="fa fa-envelope-o fa-2x"></i></a>
 		  </div>
 
-	  	<a class="arrow-control" href="#" onclick="Main.scroolToSection('whoWeAre');"><i class="arrow down"></i></a>
-		</section>
-
-    <section class="who-we-are" id="whoWeAre">
-		  <h2 class="text-side-borders section-title">quem somos</h2>
-
-		  <p class="section-description">
-		    Somos um grupo que visa promover o PHP e demais tecnologias relacionadas ao desenvolvimento web na região do Vale do Paraíba - SP.
-		  </p>
+		  <a class="arrow-control" href="#" onclick="Main.scroolToSection('events');"><i class="arrow down"></i></a>
 		</section>
 
 		<section class="events" id="events">
 		  <h2 class="text-side-borders section-title">eventos</h2>
 
 		  <p class="section-description">
-				Veja quais serão nossos próximos encontros e eventos.
+				Estes são os nossos encontros e eventos, já realizados ou próximos.
 		  </p>
 
 		  <ul>
-		  	<!-- BLOCO A SER DESCOMENTADO SE NÃO POSSUIR NOVOS EVENTOS -->
-		  	<!-- 
-		  	<li class="card-event">
-			  	<p class="text-center">
-						Ainda não temos uma data para nosso próximo evento :(
-			  	</p>
-				</li> 
-				-->
-				<!-- BLOCO A SER DESCOMENTADO SE NÃO POSSUIR NOVOS EVENTOS -->
-
 		    <li class="card-event">
 			  	<h3><i class="fa fa-meetup"></i>Meetup #1</h3>
 			  	<h4><i class="fa fa-calendar"></i>05/05/2018 - 08h00</h4>
@@ -152,22 +136,6 @@
 			  	</p>
 				</li>
 		  </ul>
-
-		  <p>
-				<a href="/eventos" class="btn see-all">Todos os eventos</a>
-	  	</p>
-		</section>
-
-		<section class="partners" id="partners">
-	  	<h2 class="section-title"><span class="text-side-borders">Parceiros e apoiadores</span></h2>
-
-	  	<ul class="partners-list">
-				<li>
-	      	<a href="http://www.fateccruzeiro.edu.br/" target="_blank">
-						<img src="assets/dist/img/fatec-cruzeiro-logo.png" alt="Fatec Cruzeiro">
-		  		</a>
-				</li>
-	  	</ul>
 		</section>
 
 		<footer class="footer">
@@ -185,7 +153,7 @@
 
   </main>
 
-  <script src="assets/dist/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/dist/js/jquery-3.3.1.min.js"></script>
   <script src="../assets/dist/js/main.min.js"></script>
 
 </body>
