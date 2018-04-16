@@ -242,7 +242,7 @@ p.section-description {
 }
 
 .partners {
-	background-color: #061c30;
+	background-color: #FFF;
 	padding: 8rem 2rem;
 	text-align: center;
 
@@ -255,19 +255,24 @@ p.section-description {
 	}
 
 	.partners-list {
+		display: flex;
+  	flex-wrap: wrap;
 		margin: 40px auto 0;
 		max-width: 940px;
 
 		li {
-			display: inline-block;
-			margin: 0 15px 45px;
+			align-items: center;
+			display: flex;
+			height: 100px;
+			justify-content: center;
+			margin: 25px 0;
+			width: 33%;
 
 			a {
 				border-bottom: 1px dashed #FFF;
-    		padding-bottom: 10px;
 
     		&:hover {
-    			border-bottom: none;
+    			opacity: .5;
     		}
 			}
 		}
