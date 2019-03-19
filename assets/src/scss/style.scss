@@ -38,6 +38,19 @@ p.section-description {
 	max-width: 640px;
 }
 
+.link {
+	color: #FFF;
+	text-decoration: none;
+	
+	&:hover {
+		opacity: .75;
+	}
+
+	i {
+		padding-right: 10px;
+	}
+}
+
 .margin-auto {
 	margin: 0 auto !important;
 }
@@ -230,7 +243,7 @@ p.section-description {
 
     h4 {
     	font-size: .9rem;
-    	margin-bottom: 20px;
+    	margin-bottom: 10px;
     	padding-left: 5px;
 
     	i {
